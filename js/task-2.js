@@ -1,5 +1,5 @@
-const getUsersWithFriend = (users, friendName) => {
-    return users.filter(user => user.friends.includes(friendName));
+const sortByDescendingFriendCount = (users) => {
+  return users.toSorted((a, b) => b.friends.length - a.friends.length);
 };
 const allUsers = [
   {
